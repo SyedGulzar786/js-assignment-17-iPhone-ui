@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <select name="company" onchange="selectCompany()" id="company">
-    </select>
-    <select name="model" id="model">
-    </select>
+    <div class="container">
+        <select class="input" name="company" id="company">
+            <option value="">select the company</option>
+        </select>
+        <select class="input" name="model" id="model">
+            <option value="">select the model</option>
+        </select>
+    <div class="display" id="specs">
+        <span id="processor">Processor:<p></p></span>
+        <span id="ram">Ram:<p></p></span>
+        <span id="rom">Rom:<p></p></span>
+        <span id="battery">Battery:<p></p></span>
+        <span id="camera">Camera:<p></p></span>
+    </div>
+    <div class="display" id="pic">
+        <img id="show" class="poster" src="" alt="">
+    </div>
+
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
